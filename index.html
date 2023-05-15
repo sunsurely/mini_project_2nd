@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+   <title>스파르타 피디아</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+
+   <style>
+      * {
+         font-family: "Gowun Dodum", sans-serif;
+      }
+
+
+      #modal.active {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 1900px;
+         height: 1900px;
+         background-color: #000000;
+         opacity: 0.8;
+         z-index: 10;
+      }
+
+      #jy,
+      #ps,
+      #mj,
+      #hj {
+         display: none;
+      }
+
+      #jy.active {
+         word-wrap: break-word;
+         position: fixed;
+         top: 25%;
+         left: 30%;
+         width: 800px;
+         height: 500px;
+         background-color: #ffffff;
+         opacity: 1;
+         z-index: 12;
+      }
+
+      #ps.active {
+         word-wrap: break-word;
+         position: fixed;
+         top: 25%;
+         left: 30%;
+         width: 800px;
+         height: 500px;
+         background-color: #ffffff;
+         opacity: 1;
+         z-index: 12;
+      }
+
+      #mj.active {
+         word-wrap: break-word;
+         position: fixed;
+         top: 25%;
+         left: 30%;
+         width: 800px;
+         height: 500px;
+         background-color: #ffffff;
+         opacity: 1;
+         z-index: 12;
+      }
+
+      #hj.active {
+         word-wrap: break-word;
+         position: fixed;
+         top: 25%;
+         left: 30%;
+         width: 800px;
+         height: 500px;
+         background-color: #ffffff;
+         opacity: 1;
+         z-index: 12;
+      }
+
+      .mycards {
+         margin: 100px auto 0 auto;
+         width: 95%;
+         max-width: 1200px;
+      }
+
+      .mycards img {
+         width: 180px;
+         height: 150px;
+      }
+
+      .mypost {
+         width: 95%;
+         max-width: 500px;
+         margin: 20px auto 0px auto;
+         padding: 20px;
+         box-shadow: 0px 0px 3px 0px gray;
+      }
+
+      .mybtns {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+
+         margin-top: 20px;
+      }
+
+      .mybtns>button {
+         margin-right: 10px;
+      }
+
+      #container {
+         width: 700px;
+         font-size: 16px;
+         margin-top: 10px;
+         margin-left: 360px;
+      }
+
+      #container div {
+         margin-top: 30px;
+      }
+   </style>
+
+</head>
+
+<body>
+   <div id="container">
+      <div>
+         <h2>팀소개내용1</h2>
+         15일 부동산R114에 따르면 올해 전국에서 분양 및 분양계획인 민영아파트 342개 단지,
+         총 27만8958가구 가운데 125곳, 14만6382가구가 시공능력평가 상위 10개 건설사 물량으로
+         집계됐다. 올해 전체 공급물량의 절반 이상을 상위 10개사가 책임지는 셈이다.
+      </div>
+      <div>
+         <h2>팀소개내용2</h2>
+         경기침체가 장기화되며 강원도 내 외식·유통업계에 '가성비 마케팅' 바람이 불고 있다. 콜키지프리 서비스부터 영수증 연계 할인까지 소비자들의 지갑을 열기 위한 경쟁이 치열하다.
+
+         춘천시 석사동의 한 고깃집은 최근 가게 외벽에 '콜키지 프리' 현수막을 내걸고 서비스를 시작했다. 소주, 맥주, 와인 주종에 관계없이 외부주류 반입이 가능하고 컵과 얼음도 무료로 제공한다. 이미
+         식당에서 4,000원에 주류를 판매 중이지만 보다 저렴한 가격에 손님들이 술을 마실 수 있도록 한 것이다.
+
+         콜키지프리 서비스를 개시한 것은 손님 유치 때문이다. 식당 사장 A씨(50대)는 "고깃집은 주류 매출 비중이 크기 때문에 테이블 단가는 포기한 것이라고 봐야한다"면서도 "서비스 시작 이후 입소문이
+         퍼지면서 손님이 늘었다. 이점이 더 큰 것 같다"고 말했다.
+      </div>
+      <div>
+         <h2>팀소개내용3</h2>
+         경기침체가 장기화되며 강원도 내 외식·유통업계에 '가성비 마케팅' 바람이 불고 있다. 콜키지프리 서비스부터 영수증 연계 할인까지 소비자들의 지갑을 열기 위한 경쟁이 치열하다.
+
+         춘천시 석사동의 한 고깃집은 최근 가게 외벽에 '콜키지 프리' 현수막을 내걸고 서비스를 시작했다. 소주, 맥주, 와인 주종에 관계없이 외부주류 반입이 가능하고 컵과 얼음도 무료로 제공한다. 이미
+         식당에서 4,000원에 주류를 판매 중이지만 보다 저렴한 가격에 손님들이 술을 마실 수 있도록 한 것이다.
+
+         콜키지프리 서비스를 개시한 것은 손님 유치 때문이다. 식당 사장 A씨(50대)는 "고깃집은 주류 매출 비중이 크기 때문에 테이블 단가는 포기한 것이라고 봐야한다"면서도 "서비스 시작 이후 입소문이
+         퍼지면서 손님이 늘었다. 이점이 더 큰 것 같다"고 말했다.
+      </div>
+   </div>
+   <div class="mycards">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+         <div class="col">
+            <div class="card h-100">
+               <img src="" class="card-img-top" alt="..." />
+               <div class="card-body">
+                  <h5 class="card-title">개인이름</h5>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card h-100">
+               <img src="" class="card-img-top" alt="..." />
+               <div class="card-body">
+                  <h5 class="card-title">개인이름</h5>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card h-100">
+               <img src="" class="card-img-top" alt="..." />
+               <div class="card-body">
+                  <h5 class="card-title">개인이름</h5>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card h-100">
+               <img src="" class="card-img-top" alt="..." />
+               <div class="card-body">
+                  <h5 class="card-title">개인이름</h5>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div id="modal">
+      <div id="jy">
+         <div class="desc">운동과 자기개발에 관심이 많은 사람입니다.</div>
+         <div class="mbti">MBTI : ENFJ</div>
+         <div class="style">무엇을 실행할 때, 혼자 하든 협업을 하든 빠른 결정과 실행 그리고 성공할 때까지의 반복을 추구합니다.</div>
+      </div>
+      <div id="hj">
+         <div class="desc">안녕하세요. node.JS 6기 9조 정호중입니다. 클라우드 업체 인프라팀에서 근무했었습니다. 문제 발생 시 관련 엔지니어에게 연락만 돌리는 것이 아닌 스스로 문제를
+            해결할 수 있는 경쟁력을 가진 사람이 되고 싶어 지원했습니다. 아직 모르는 내용이 많아 큰 도움이 되지 못할 수도 있지만 부지런히 따라잡도록 하겠습니다. 잘 부탁드립니다.</div>
+         <div class="mbti">MBTI:INTJ-T</div>
+         <div class="style">그 동안 혼자서 일하고 공부하며 끌어안고 끙끙거리는 스타일이었습니다. 모처럼 많은 분들과 서로 교류할 수 있는 기회가 주어졌으니 최대한 이용해먹도록 하겠습니다.
+         </div>
+      </div>
+      <div id="mj">
+         <div class="desc">안녕하세요 node.js A반 9조 구구단의 전민준입니다. 메타버스 실감컨텐츠 3d modeling 관련 일을 하다가 열받아서 일 그만두고 코딩하러 왔습니다.
+            머리가 좋은 편은 아니라서 따라가기 버거울 수도 있지만 시간과 몸으로 때울테니 다같이 좋은 개발자가 되기 위해 화이팅 했으면 좋겠습니다.
+            제가 낯을 좀 가리는 편이라 지금은 조용하지만 나중에는 시끄러울 수도 있으니 취향에 따라 음소거 버튼 눌러주시면 감사하겠습니다.
+            그럼 4개월동안 잘 부탁드리겠습니다.ㅎㅎ </div>
+         <div class="mbti"> MBTI:INFP </div>
+         <div class="style">최대한 소통을 많이하고 다른사람의 의견을 수렴하려고 노력하는 편입니다. 문제가 발생했을 때 안된다는 생각보다 어떻게 해결할 수 있을 지 고민하고 해결될 때 까지
+            머리박는
+            스타일입니다</div>
+      </div>
+      <div id="ps">
+         <div class="desc">
+            안녕하세요 node.js 6기 김필선입니다. AI , 가상현실, 메타버스에 관심이 많고
+            결국 웹과 관련이 있다고 생각해서 웹을 공부하기로 마음 먹었습니다.
+            잘 부탁드립니다.</div>
+         <div class="mbti">MBTI:INFP</div>
+         <div class="style">자신이 할 수 있는 만큼 최선을
+            다해서 해내는 것</div>
+      </div>
+
+   </div>
+</body>
+
+</html>
