@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+      
+
+ 
+     
+  
+   body{
+      position:relation;
+   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+   background-position: 0 200px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-size: 1920px 950px;
+   height: auto; 
+
+      }
+           #modal {
+         display: none;
+      }
+
+      #modal.active {
+         display: block;
+         position: fixed;
+         top: 0;
+         left: 0;
+         /* 100%로 변경했습니다. */
+         width: 100%;
+         /* 100%로 변경했습니다. */
+         height: 100%;
+         background-color: #000000;
+         opacity: 0.8;
+         z-index: 10;
+      }
+ 
+      
+      
+   
+
+      #modal_up {
+        display:none;
+      }
+       
+ 
+      #modal_up.active {
+         display: block;
+         padding:30px;
+         word-wrap: break-word;
+         background-size:cover;
+         position: fixed;
+         color:#ffffff;
+         top: 25%;
+         left: 30%;
+         width: 800px;
+         height: 520px;
+        
+         z-index: 12;
+      }
+
+
+      #modal_texts{
+         width:380px;
+         heigth:200px;
+         margin-left:300px;
+         margin-top:60px;
+         font-family: 'Noto Sans KR', sans-serif;
+      }
+  
+     
+      #myname{
+         font-size:45px;
+         font-weight:bold;
+      }
+      #mymbti{
+         font-size:18px;
+         font-weight:400;
+         margin-left:5px;
+         color:#efc810;
+      }
+
+      #im{
+           
+         margin-top:25px;
+         color:#ce3306;
+         font-weight:bold;
+      }
+     
+      #mystyle{
+         margin-top:30px;
+      }
+
+      .mytitle {
+         width: 100%;
+         height: 200px;
+         background-color:black;
+         background-position: center;
+         background-size: cover;
+         color: white;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         font-size:40px;
+      }
+      .mytitle h1{
+         font-size:70px;
+      } 
+      .col{
+         text-align:center;
+         font-family: 'Noto Sans KR', sans-serif;
+      }
+
+      .mytitle>button {
+         width: 100px;
+         height: 30px;
+         font-size: 16px;
+         background-color: transparent;
+         color: white;
+         border-radius: 50px;
+         border: 1px solid white;
+         margin-top: 10px;
+         margin-bottom: 10px; /*정호중*/
+      }
+      
+
+      .mytitle>button:hover {
+         border: 2px solid white;
+      }
+
+      .mycomment {
+         color: gray;
+      }
+
+      .mycards {
+         margin: 60px auto 30px -1200px;
+         width: 95%;
+         max-width: 1200px;
+      }
+
+      .mycards img {
+         width: 180px;
+         height: 150px;
+      }
+
+      #post-box {
+         position: absolute;
+         left: 38%;
+         z-index:10;
+       }
+
+      .mypost {
+         
+         width: 95%;
+         max-width: 500px;
+         margin: 20px auto 0px auto;
+         padding: 20px;
+         box-shadow: 0px 0px 10px white;         
+         display: none;
+         color:#282828;s
+         font-size:18px;
+         font-weight:bold;
+      }
+
+      #id , #name, #desc, #mbti, #style  {
+         background-color:rgba(255,255,255,0.9);
+         box-shadow:0 0 5px white;
+         border:none;
+         color:#282828;
+          font-size:18px;
+          font-weight:bold;
+       }
+       
+       #mbti.active:focus{
+         background-color:rgba(255,255,255,0.4);
+         box-shadow:0 0 5px white;
+         border:none;
+         color:#282828;
+       }
+  
+
+      #mbtilabel{
+         background-color:rgba(255,255,255,0.5);
+         box-shadow:0 0 5px white;
+         border:none;
+         color:#282828;
+         font-size:18px;
+         font-weight:bold;
+      }
+      .col{
+         padding:0;
+         margin-left:20px;
+         width:280px;
+      }
+      .col:hover{
+       cursor:pointer;
+       box-shadow:0 0 10px black;
+      }
+      .col img{
+         width:280px;
+      }
+      .mybtns {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+
+         margin-top: 20px;
+      }
+
+      .mybtns>button {
+         margin-right: 10px;
+         border:none;
+         box-shadow:0 0 5px white;
+         color:#282828;
+         font-weight:bold;
+         background-color:rgba(255,255,255,0.4);
+         
+      }
+
+      #container {
+         /* width: 700px; 정호중 */
+         
+         margin-left:-700px;
+         width: 100%;
+         margin-top: 50px;
+         font-size: 18px;
+      
+         color: white;         
+         padding-left: 5%;
+         font-family: 'Noto Sans KR', sans-serif;
+       
+         /* margin-top: 100px;
+          margin-left: 360px; 정호중 */
+         margin-bottom: 50px;
+      }
+
+ 
+      #desc1 {
+         width: 45%;
+       }
+
+       #desc1 h4 {
+         color : rgb(235, 225, 136);
+       }
+       /*색상변경, 전민준*/
+      
+       #desc1 span{
+         font-size: 40px;
+       }
+       /*폰트사이즈 변경, 전민준*/
+       
+       .desc2 {
+         margin-top: 30px;
+         width: 45%;
+       }
+
+       .desc2 h4 { 
+         color : rgb(235, 225, 136) ;
+       }
+       
+       /*색상변경, 전민준*/
+      
+       .deletebtn {
+         position: absolute;
+         top: 5px;
+         right: 10px;
+         font-size: 0px;
+         background-color: rgb(240, 25, 25);
+         box-shadow: 0 0 5px black;
+         border-radius: 20px;
+         width: 20px;
+         height: 20px;
+
+     }
+
+     .deletebtn:hover {
+         font-size: 14px;
+         color: black;
+         width: 50px;
+         height: 25px;
+         background-color: rgba(255, 255, 255);
+     }
+
+     .modifybtn {
+         position: absolute;
+         top: 5px;
+         right: 35px;
+         font-size: 0px;
+         background-color: rgba(10, 255, 50);
+         box-shadow: 0 0 5px black;
+         border-radius: 20px;
+         width: 20px;
+         height: 20px;
+
+     }
+
+     .modifybtn:hover {
+         font-size: 14px;
+         color: black;
+         width: 50px;
+         height: 25px;
+         height: 25px;
+         background-color: rgba(255, 255, 255);
+     }
+       
+     #minipage {
+      margin: 100px auto 0px 800px;
+      color: black;
+      font-size:40px;
+      font-family: 'Noto Sans KR', sans-serif;   
+      font-weight: bold;     
+   }

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+   <link href="../static/style.css" rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+   <script src="../static/script.js"></script>
+
+
+   <title>구구단을 외자</title>
+
+
+</head>
+
+<body>
+
+   <div class="mytitle">
+      <h1>About Us</h1>
+      <button id="regbutton" onclick="open_box()">기록하기</button>
+
+   </div>
+   <div class="mypost" id="post-box">
+      <div class="form-floating mb-3">
+         <input id="id" type="email" class="form-control" placeholder="name@example.com">
+         <label>ID</label>
+      </div>
+      <div class="form-floating mb-3">
+         <input id="name" type="email" class="form-control" placeholder="name@example.com">
+         <label>이름</label>
+      </div>
+      <div class="form-floating mb-3">
+         <textarea id="desc" class="form-control" placeholder="Leave a comment here"></textarea>
+         <label for="floatingTextarea2">자신에 대한 설명</label>
+      </div>
+      <div class="input-group mb-3">
+         <label id="mbtilabel" class="input-group-text" for="inputGroupSelect01">MBTI</label>
+         <select class="form-select" id="mbti">
+            <option selected>-- 선택하기 --</option>
+            <option value="1">INTJ</option>
+            <option value="2">INTP</option>
+            <option value="3">ENTP</option>
+            <option value="4">ENTJ</option>
+            <option value="5">INFJ</option>
+            <option value="6">INFP</option>
+            <option value="7">ENFP</option>
+            <option value="8">ENFJ</option>
+            <option value="9">ISFJ</option>
+            <option value="10">ISFP</option>
+         </select>
+      </div>
+      <div class="form-floating">
+         <textarea id="style" class="form-control" placeholder="Leave a comment here"></textarea>
+         <label for="floatingTextarea2">자신의 성격, 협업에 대한 생각</label>
+      </div>
+      <div class="mybtns">
+         <button onclick="posting()" type="button" class="btn btn-outline-dark">기록하기</button>
+         <button onclick="close_box()" type="button" class="btn btn-outline-dark">닫기</button>
+      </div>
+   </div>
+
+
+   <div id="container"> <!--정호중-->
+      <div id="desc1">
+         <h4>실력, 인성 Good, 이제는 Good을 넘어 Best를 준비하는 <span>"99DDAN"</span></h4><!--태그 추가, 전민준-->
+         <br>
+         <p> 안녕하세요. 저희 구구단은 good 9조(구웃 구조)로 좋은사람들이 모인 9조라는 의미입니다.<br></p>
+
+         good이 가진 여러의미처럼 즐겁게 프로젝트를 진행하면서 최고의 조가 되기 위해 각 팀원이 <br>
+         협력하고 최선의 노력을 다하고 있습니다.<br>
+
+         지금의 팀을 발판으로 Good을 넘어 Best를 목표로 하고 있으며, 개인이 아닌 팀원 모두가<br> 디벨롭 될 수 있는 시간을 가지고자 합니다.
+         <br><br>
+         <hr width=650> <!-- 라인 추가 및 문단 수정, 전민준-->
+
+      </div>
+      <div class="desc2">
+         <h4> characteristic </h4>
+         <br>
+         <h5>1. good people</h5>
+
+         구구단은 좋은 사람들이 모여있는 팀이라고 자부합니다. 개개인의 성격과<br> 특징은 다르지만 각자의 장점을 살려 팀원의 단점을 극복할 수 있게 도움을<br>
+         주고 있습니다.<br><br>
+
+         <h5>2. Good Vibe</h5>
+
+         항상 좋은 분위기에서 프로젝트를 진행하며 어려움이 있을 때 서로의 이야기를<br>들어주고 피드백 해줄 수 있는 최고의 환경을
+         가진 팀입니다.<br><br>
+
+         <h5>3.Good Ability</h5>
+
+         구구단은 실력이 좋습니다. 코딩뿐만 아니라 각자가 잘할 수 있는 영역에서 최고의 결과물을 만들어 낼 것입니다.<br><br>
+         <hr width=650> <!-- 라인 추가 및 문단 수정, 전민준-->
+      </div>
+      <div class="desc2">
+         <h4>Appointment</h4>
+         <div><b style="font-size: larger;">“어떤 어려움이 있어도 포기하지 말고 최고의 개발자가 되자”</b></div>
+      </div>
+   </div>
+
+
+   <div>
+      <h2 id="minipage">Personal Page</h2>
+      <div class="mycards">
+         <div class="row row-cols-1 row-cols-md-4 g-4" id="cards-box">
+            <!-- / -->
+
+         </div>
+         <!-- / -->
+      </div>
+   </div>
+   </div>
+
+   <!-- / -->
+   <div id="modal">
+   </div>
+   <div id="modalcon">
+
+   </div>
+
+   <!-- / -->
+
+
+
+</body>
+
+</html>
